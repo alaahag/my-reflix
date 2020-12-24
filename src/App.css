@@ -1,38 +1,172 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.main-links {
+	margin-right: 10px;
+}
+
+.main-links:hover {
+	text-decoration: underline;
+}
+
+#main-header-links {
+	background-color: #282c34;
+	padding: 10px;
+	font-size: 18px;
+}
+
+#logo {
+	float: right;
+	color: white;
+	margin-right: 2px;
+	cursor: default;
+}
+
+.landing_divs {
+	cursor: pointer;
+	font-size: 32px;
+	padding: 20px;
+	border-radius: 5px;
+	width: 200px;
+	margin: 10px;
+}
+
+.landing_divs:hover {
+	font-size: 120%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.moviesImage {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.moviesImage:hover {
+	border: 1px solid white;
+}
+
+.catalog_name {
+	font-size: 22px;
+	padding: 10px;
+	border: 3px inset black;
+	color: black;
+	background-color: #eeec78;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: fantasy;
+}
+
+#search {
+	margin-left: 7px;
+	padding: 5px;
+	border-radius: 5px;
+	width: 200px;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.button_add_remove {
+	position: relative;
+	right: 30px;
+	padding: 4px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	width: 30px;
+	background-color: #eeec78;
+	color: midnightblue;
+}
+
+.button_add_remove:hover {
+	font-size: 150%;
+	padding: 1px;
+}
+
+.catalog_header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	background-color: #282c34;
+}
+
+#whoiswatching {
+	font-size: 32px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	color: white;
+	text-align: center;
+	align-self: center;
+	display: block;
+}
+
+.movie-header {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 24px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+#budget_label, #budget_num {
+	float: right;
+	color: white;
+	margin-right: 10px;
+	cursor: default;
 }
